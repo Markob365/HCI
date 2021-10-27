@@ -10,28 +10,28 @@
     z-index: -1;
 }
 
-.main .content {
+.content {
     width: clamp(400px, 100%, 1100px);
     margin: 0 auto;
     display: flex;
     flex-flow: column;
 }
 
-.main .content .navigation {
+.content .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     /*MARGIN MISSING*/
 }
 
-.main .content .navigation nav {
+.content .navigation nav {
     display: inline-flex;
     justify-content: space-between;
     list-style: none;
     width: max-content;
 }
 
-.main .content .navigation nav li {
+.content .navigation nav li {
     list-style: none;
     text-decoration: none;
     font-family: Roboto;
@@ -46,7 +46,7 @@
     width: 150px;
 }
 
-.main .content .navigation nav li:hover {
+.content .navigation nav li:hover {
     background: #8034ad;
     font-family: Roboto;
     font-style: normal;

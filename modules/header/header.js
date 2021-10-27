@@ -7,7 +7,7 @@ import HeroImg from '../../assets/hero.png';
 
 const Header = () => {
     return (
-        <header className={styles.main}>
+        <header className="h-4/6 relative flex items-center">
             <div className={styles.bgImg}>
                 <Image
                     src={HeroImg}
@@ -16,7 +16,7 @@ const Header = () => {
                     alt="Hero image"
                 />
             </div>
-            <main className={styles.content}>
+            <main className="my-0 mx-auto flex flex-col w-full max-w-6xl">
                 <section className={styles.navigation}>
                     <Image
                         src={LogoImg}
