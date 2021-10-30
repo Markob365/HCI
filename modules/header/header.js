@@ -1,14 +1,14 @@
 import React from 'react';
-import styles from './header.module.css';
 import Image from 'next/image';
 
 import LogoImg from '../../assets/logo.png';
 import HeroImg from '../../assets/hero.png';
+import Navbar from '../../components/navbar';
 
 const Header = () => {
     return (
-        <header className="h-4/6 relative flex items-center">
-            <div className={styles.bgImg}>
+        <header className="h-4/6 relative flex justify-center items-center">
+            <div className="z--1">
                 <Image
                     src={HeroImg}
                     layout="fill"
@@ -16,8 +16,8 @@ const Header = () => {
                     alt="Hero image"
                 />
             </div>
-            <main className="my-0 mx-auto flex flex-col w-full max-w-6xl">
-                <section className={styles.navigation}>
+            <main className="my-0 mx-auto flex flex-col min-w-sm max-w-6xl w-full">
+                <section className="flex justify-between items-center">
                     <Image
                         src={LogoImg}
                         layout="fixed"
@@ -25,18 +25,15 @@ const Header = () => {
                         height={150}
                         alt="Design logo"
                     />
-                    <nav>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Showcase</li>
-                        <li>Blog</li>
-                        <li>Contact</li>
-                        <li>Sign In</li>
-                    </nav>
+                    <Navbar />
                 </section>
-                <section className={styles.titles}>
-                    <h1>Design Matters</h1>
-                    <h3>Entrust us with your digital appearance</h3>
+                <section className="mt-14">
+                    <h1 className="h-20 m-0 mb-1 font-bold text-7xl text-purple-800">
+                        Design Matters
+                    </h1>
+                    <h3 className="h-14 m-0 font-normal text-5xl text-purple-600">
+                        Entrust us with your digital appearance
+                    </h3>
                 </section>
             </main>
         </header>
