@@ -24,6 +24,7 @@ const Header = () => {
                         height={50}
                         alt="Design logo"
                     />
+
                     <NavBar />
                 </div>
                 <div className="z-10">
